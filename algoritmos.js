@@ -53,5 +53,30 @@ console.log(`El salario total es de ${salario_final}`)
 
 
 console.log("PUNTO 8")
+let examen1 = parseFloat(prompt("Ingrese nota examen matemáticas"))
+let tarea11, tarea12, tarea13 = 0
+tarea11 = parseFloat(prompt("Ingrese nota tarea 1 matemáticas"))
+tarea12 = parseFloat(prompt("Ingrese nota tarea 2 matemáticas"))
+tarea13 = parseFloat(prompt("Ingrese nota tarea 3 matemáticas"))
+let promedioTareasMatematicas = (tarea12 + tarea11 + tarea13)/3
+let promedioMatematicas = 0.9* examen1 + 0.1*promedioTareasMatematicas
+console.log(`Calificación matemáticas ${promedioMatematicas}`)
+
+let examen2 = parseFloat(prompt("Ingrese nota examen física"))
+let tarea21, tarea22 = 0
+tarea21 = parseFloat(prompt("Ingrese nota tarea 1 física"))
+tarea22 = parseFloat(prompt("Ingrese nota tarea 2 física"))
+let promedioTareasFisica = (tarea21 + tarea22)/2
+let promedioFisica = 0.8* examen2 + 0.2*promedioTareasFisica
+console.log(`Calificación física ${promedioFisica}`)
+
+let examen3 = parseFloat(prompt("Ingrese nota examen química"))
+let tarea31, tarea32, tarea33 = 0
+tarea31 = parseFloat(prompt("Ingrese nota tarea 1 química"))
+tarea32 = parseFloat(prompt("Ingrese nota tarea 2 química"))
+tarea33 = parseFloat(prompt("Ingrese nota tarea 3 química"))
+let promedioTareasQuimica = (tarea32 + tarea31 + tarea33)/3
+let promedioQuimica = 0.85* examen3 + 0.15*promedioTareasQuimica
+console.log(`Calificación química ${promedioQuimica}`)
 
 
